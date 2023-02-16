@@ -37,6 +37,11 @@ app.use(bodyParser.json());//want json to be used.
 //use() - middleware stack | handle Routes here
 app.use('/tasks', taskRoutes);
 app.use('/user', userRoutes);
+app.use('/test', (req,res,next) => {
+  return res.status(200).json({
+    message: 'Works fine!'
+  });
+});
 
 //handling ERRORS
 app.use((req, res, next) => {
