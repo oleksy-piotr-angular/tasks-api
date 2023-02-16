@@ -1,0 +1,33 @@
+{
+  "name": "tasks-api",
+  "version": "1.0.0",
+  "description": "This Api is for Usining Conection between Mongo DB and Tasks App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksy-piotr-angular/node-api.git"
+  },
+  "author": "Piotr Oleksy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksy-piotr-angular/node-api/issues"
+  },
+  "homepage": "https://github.com/oleksy-piotr-angular/node-api#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "body-parser": "^1.20.1",
+    "eslint": "8.22.0",
+    "jsonwebtoken": "^9.0.0"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "env": {
+    "MONGO_ATLAS_PASS": "kalafior15",
+    "JWT_KEY": "jaosjd991299"
+  }
+}
