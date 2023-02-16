@@ -1,4 +1,5 @@
 const express = require('express');
+var cors = require('cors');
 var app = express();
 const logger = require('morgan');
 const bodyParser = require('body-parser');
@@ -13,7 +14,7 @@ mongoose.connect('mongodb+srv://tasks-manager:'+process.env.MONGO_ATLAS_PASS+'@a
 
 //CORS handling for RESTful API - communication from another PORTS
 //catch all requests and pass CORS Headers
-app.use((req, res, next) => {
+/* app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*'); //access to any origin
   res.header(
     'Access-Control-Allow-Headers',
@@ -25,7 +26,10 @@ app.use((req, res, next) => {
   }//if request method is 'OPTION' we set which we allow 
 
   next();//PASS Incoming Request to the next Route
-});
+}); */
+
+//Use middleware to enable ALL CORS Request Instead Setting above
+app.use(cors());
 
 
 //logger(Morgan Package)
