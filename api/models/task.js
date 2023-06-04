@@ -7,7 +7,7 @@ const taskSchema = mongoose.Schema({
   created: {type: String, required: true},
   end: {type: String, required: false},
   isDone: {type: Boolean, required: true},
-  user: {
+  user: { // we make a relation between 'Tasks' an 'Users'
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
     required: true, //this Task required userId
