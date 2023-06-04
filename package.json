@@ -1,7 +1,7 @@
 {
   "name": "tasks-api",
   "version": "1.0.0",
-  "description": "This Api is for Usining Conection between Mongo DB and Tasks App",
+  "description": "This Api is for Using Connection between Mongo DB and Tasks App",
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js"

@@ -64,7 +64,7 @@ exports.user_login = (req, res, next) => {
         //we received array so we check if it's empty
         return res.status(401).json({
           //HTTP Status means  "Unauthorized response status code indicates that the client request has not been completed because it lacks valid authentication credentials for the requested resource."
-          message: 'Auth fails',
+          message: 'Auth failed',
         });
       } else {
         //check if taken password from body and hash from storage compare each other
